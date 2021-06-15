@@ -1,5 +1,5 @@
 ---
-title: My Hexo Setting
+title: "[Hexo] My Hexo Setting"
 categories: hexo
 tags: hexo
 keywords: hexo
