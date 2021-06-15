@@ -6,7 +6,7 @@
   <link href="https://rangerz.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://rangerz.github.io/blog/"/>
-  <updated>2021-06-15T05:19:45.760Z</updated>
+  <updated>2021-06-15T06:18:49.034Z</updated>
   <id>https://rangerz.github.io/blog/</id>
   
   <author>
@@ -18,14 +18,13 @@
   
   <entry>
     <title>My Hexo Setting</title>
-    <link href="https://rangerz.github.io/blog/2021/06/14/My-Hexo-Setting/"/>
-    <id>https://rangerz.github.io/blog/2021/06/14/My-Hexo-Setting/</id>
+    <link href="https://rangerz.github.io/blog/posts/30609/"/>
+    <id>https://rangerz.github.io/blog/posts/30609/</id>
     <published>2021-06-15T04:19:40.000Z</published>
-    <updated>2021-06-15T05:19:45.760Z</updated>
+    <updated>2021-06-15T06:18:49.034Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;Hexo&quot;&gt;&lt;a href=&quot;#Hexo&quot; class=&quot;headerlink&quot; title=&quot;Hexo&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Required&lt;/strong&gt;: nodejs and npm&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    <summary type="html">this blog&#39;s hexo setting</summary>
     
     
     

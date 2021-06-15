@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>My Hexo Setting</title>
+    <url>/blog/posts/30609/</url>
+    <content><![CDATA[<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a><a href="https://hexo.io/">Hexo</a></h3><p><strong>Required</strong>: nodejs and npm</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p>Uexo Command Usage</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Usage: hexo &lt;command&gt;</span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">  clean     Remove generated files and cache.</span><br><span class="line">  config    Get or set configurations.</span><br><span class="line">  deploy    Deploy your website.</span><br><span class="line">  generate  Generate static files.</span><br><span class="line">  help      Get help on a command.</span><br><span class="line">  init      Create a new Hexo folder.</span><br><span class="line">  list      List the information of the site</span><br><span class="line">  migrate   Migrate your site from other system to Hexo.</span><br><span class="line">  new       Create a new post.</span><br><span class="line">  publish   Moves a draft post from _drafts to _posts folder.</span><br><span class="line">  render    Render files with renderer plugins.</span><br><span class="line">  server    Start the server.</span><br><span class="line">  version   Display version information.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Page-Markdown"><a href="#Page-Markdown" class="headerlink" title="Page - Markdown"></a>Page - Markdown</h3><p><a href="https://www.markdownguide.org/cheat-sheet/">Markdown Cheat Sheet</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Add tags, categories, and about pages</span></span><br><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br><span class="line">hexo new page about</span><br><span class="line"></span><br><span class="line"><span class="comment"># New a post</span></span><br><span class="line">hexo new <span class="string">&quot;Post Name&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>Post Header</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">title: My Hexo Note</span><br><span class="line">date: 2021-06-12 01:53:11</span><br><span class="line">categories: hexo</span><br><span class="line">tags: hexo</span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Hexo-Theme-NexT"><a href="#Hexo-Theme-NexT" class="headerlink" title="Hexo Theme - NexT"></a><a href="https://github.com/theme-next/hexo-theme-next">Hexo Theme - NexT</a></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<h4 id="NexT-Config-themes-next-config-yml"><a href="#NexT-Config-themes-next-config-yml" class="headerlink" title="NexT Config - themes/next/_config.yml"></a>NexT Config - <code>themes/next/_config.yml</code></h4><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">minify:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">pjax:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br><span class="line"><span class="attr">darkmode:</span> <span class="string">auto</span></span><br><span class="line"></span><br><span class="line"><span class="attr">copy_button:</span></span><br><span class="line">	<span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Show text copy result.</span></span><br><span class="line">	<span class="attr">show_result:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Available values: default | flat | mac</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">mac</span></span><br><span class="line"></span><br><span class="line"><span class="attr">mediumzoom:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">busuanzi_count:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Google-Analytics"><a href="#Google-Analytics" class="headerlink" title="Google Analytics"></a>Google Analytics</h4><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">google_analytics:</span></span><br><span class="line">  <span class="attr">tracking_id:</span> <span class="comment"># &lt;app_id&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Disqus-Comment"><a href="#Disqus-Comment" class="headerlink" title="Disqus Comment"></a>Disqus Comment</h4><p>Login and Setup a Disqus Account: <a href="https://disqus.com/">https://disqus.com/</a></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Disqus</span></span><br><span class="line"><span class="attr">disqus:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">shortname:</span> <span class="string">ranger-chans-blog</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Hexo-Plugins"><a href="#Hexo-Plugins" class="headerlink" title="Hexo Plugins"></a><a href="https://hexo.io/plugins/">Hexo Plugins</a></h3><h4 id="GitHub-Deployer"><a href="#GitHub-Deployer" class="headerlink" title="GitHub Deployer"></a><a href="https://github.com/hexojs/hexo-deployer-git">GitHub Deployer</a></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p><code>_config.yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://rangerz.github.io/blog</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:rangerz/blog.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">github-pages</span></span><br><span class="line">  <span class="attr">message:</span> <span class="string">Update</span> <span class="string">blog</span> <span class="string">at</span> &#123;&#123; <span class="string">now(&#x27;YYYY-MM-DD</span> <span class="string">HH:mm:ss&#x27;)</span> &#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Deploy GitHub Command</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="Sitemap"><a href="#Sitemap" class="headerlink" title="Sitemap"></a><a href="https://github.com/hexojs/hexo-generator-sitemap">Sitemap</a></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<p><code>_config.yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">sitemap:</span></span><br><span class="line">   <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="RSS-Feed"><a href="#RSS-Feed" class="headerlink" title="RSS Feed"></a><a href="https://github.com/hexojs/hexo-generator-feed">RSS Feed</a></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
+<p><code>_config.yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># RSS Feed</span></span><br><span class="line"><span class="comment">## Docs: https://github.com/hexojs/hexo-generator-feed</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br><span class="line">  <span class="attr">hub:</span></span><br><span class="line">  <span class="attr">content:</span></span><br><span class="line">  <span class="attr">content_limit:</span> <span class="number">140</span></span><br><span class="line">  <span class="attr">content_limit_delim:</span> <span class="string">&#x27; &#x27;</span></span><br><span class="line">  <span class="attr">order_by:</span> <span class="string">-date</span></span><br><span class="line">  <span class="attr">icon:</span> <span class="string">icon.png</span></span><br><span class="line">  <span class="attr">autodiscovery:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">template:</span></span><br></pre></td></tr></table></figure>
+
+<p><code>themes/next/_config.yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">rss:</span> <span class="string">/atom.xml</span></span><br></pre></td></tr></table></figure>
+
+<p><code>themes/next/layout/_partials/sidebar/site-overview.swig</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.rss %&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;feed-link motion-element&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&#123;&#123; url_for(theme.rss) &#125;&#125;&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;alternate&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-rss&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">      RSS</span><br><span class="line">    <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="nofollow"><a href="#nofollow" class="headerlink" title="nofollow"></a><a href="https://github.com/liuzc/hexo-autonofollow">nofollow</a></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-autonofollow --save</span><br></pre></td></tr></table></figure>
+
+<p><code>_config.yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">nofollow:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="lazyload-image"><a href="#lazyload-image" class="headerlink" title="lazyload-image"></a><a href="https://github.com/Troy-Yang/hexo-lazyload-image">lazyload-image</a></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-lazyload-image --save</span><br></pre></td></tr></table></figure>
+
+<p><code>_config.yaml</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">lazyload:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">onlypost:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="Google-Search"><a href="#Google-Search" class="headerlink" title="Google Search"></a>Google Search</h4><p><a href="https://search.google.com/search-console/welcome">https://search.google.com/search-console/welcome</a></p>
+<p>Input URL Prefix: <a href="https://rangerz.github.io/blog/">https://rangerz.github.io/blog/</a></p>
+<p>HTML Tag: <code>&lt;meta name=&quot;google-site-verification&quot; content=&quot;aODVh6Swyz72uqikurLQBpNIqJO68gqxnPpEc2Pm9kI&quot; /&gt;</code></p>
+<p>Add to <code>themes/next/layout/_partials/head/head.swig</code></p>
+<h4 id="permalink"><a href="#permalink" class="headerlink" title="permalink"></a><a href="https://github.com/rozbo/hexo-abbrlink">permalink</a></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+<p><code>_config.yaml</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">posts/:abbrlink/</span></span><br><span class="line"></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line">  <span class="attr">alg:</span> <span class="string">crc32</span></span><br><span class="line">  <span class="attr">rep:</span> <span class="string">hex</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="Search-DB"><a href="#Search-DB" class="headerlink" title="Search DB"></a><a href="https://github.com/theme-next/hexo-generator-searchdb">Search DB</a></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p><code>_config.yaml</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br></pre></td></tr></table></figure>
+
+<p><code>themes/next/_config.yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="robots-txt"><a href="#robots-txt" class="headerlink" title="robots.txt"></a>robots.txt</h4><p>Add file: <code>source/robots.txt</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># robots.txt for https://rangerz.github.io/blog/</span></span><br><span class="line"></span><br><span class="line"><span class="attr">User-agent:</span> <span class="string">*</span></span><br><span class="line"></span><br><span class="line"><span class="attr">Allow:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">Allow:</span> <span class="string">/about/</span></span><br><span class="line"><span class="attr">Allow:</span> <span class="string">/archives/</span></span><br><span class="line"><span class="attr">Allow:</span> <span class="string">/categories/</span></span><br><span class="line"><span class="attr">Allow:</span> <span class="string">/tags/</span></span><br><span class="line"></span><br><span class="line"><span class="attr">Disallow:</span> <span class="string">/images/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="string">/js/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="string">/css/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="string">/lib/</span></span><br><span class="line"></span><br><span class="line"><span class="attr">Sitemap:</span> <span class="string">https://rangerz.github.io/blog/search.xml</span></span><br><span class="line"><span class="attr">Sitemap:</span> <span class="string">https://rangerz.github.io/blog/sitemap.xml</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>
