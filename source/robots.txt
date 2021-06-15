@@ -1,0 +1,16 @@
+# robots.txt for https://rangerz.github.io/blog/
+
+User-agent: *
+
+Allow: /
+Allow: /about/
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+
+Disallow: /images/
+Disallow: /js/
+Disallow: /css/
+Disallow: /lib/
+
+Sitemap: https://rangerz.github.io/blog/sitemap.xml

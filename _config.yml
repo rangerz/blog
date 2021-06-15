@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: Ranger Chan's Blog
+subtitle: Time passes, but code remains
 description: ''
-keywords:
-author: John Doe
+keywords: Tech,Software,Developer,Magento,LeetCode,Security,CTF
+author: Ranger Chan
 language: en
-timezone: ''
+timezone: America/Chicago
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://rangerz.github.io/blog
+permalink: posts/:abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -97,9 +97,53 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:rangerz/blog.git
+  branch: gh-pages
+  message: Update blog at {{ now('YYYY-MM-DD HH:mm:ss') }}
+
+# RSS Feed
+## Docs: https://github.com/hexojs/hexo-generator-feed
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+
+# Sitemap
+## Docs: https://github.com/hexojs/hexo-generator-sitemap
+sitemap:
+  path: sitemap.xml
+
+# Auto nofollow
+## Docs: https://github.com/liuzc/hexo-autonofollow
+nofollow:
+  enable: true
+  exclude:
+
+# permalink
+## Docs: https://github.com/rozbo/hexo-abbrlink
+abbrlink:
+  alg: crc32
+  rep: hex
+
+# Search DB
+## Docs: https://github.com/theme-next/hexo-generator-searchdb
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
