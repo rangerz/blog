@@ -6,7 +6,7 @@
   <link href="https://rangerz.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://rangerz.github.io/blog/"/>
-  <updated>2021-06-15T06:47:13.971Z</updated>
+  <updated>2021-06-15T07:33:27.232Z</updated>
   <id>https://rangerz.github.io/blog/</id>
   
   <author>
@@ -17,11 +17,57 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>My Hexo Setting</title>
+    <title>[LeetCode] 0002. Add Two Numbers [Medium]</title>
+    <link href="https://rangerz.github.io/blog/posts/1c0002/"/>
+    <id>https://rangerz.github.io/blog/posts/1c0002/</id>
+    <published>2021-06-15T07:24:55.000Z</published>
+    <updated>2021-06-15T07:33:27.232Z</updated>
+    
+    
+    <summary type="html">[LeetCode] 0002. Add Two Numbers [Medium]</summary>
+    
+    
+    
+    <category term="leetcode" scheme="https://rangerz.github.io/blog/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="https://rangerz.github.io/blog/tags/leetcode/"/>
+    
+    <category term="linked-list" scheme="https://rangerz.github.io/blog/tags/linked-list/"/>
+    
+    <category term="math" scheme="https://rangerz.github.io/blog/tags/math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[LeetCode] 0001. Two Sum [Easy]</title>
+    <link href="https://rangerz.github.io/blog/posts/1c0001/"/>
+    <id>https://rangerz.github.io/blog/posts/1c0001/</id>
+    <published>2021-06-15T06:51:55.000Z</published>
+    <updated>2021-06-15T07:25:07.240Z</updated>
+    
+    
+    <summary type="html">[LeetCode] 0001. Two Sum [Easy]</summary>
+    
+    
+    
+    <category term="leetcode" scheme="https://rangerz.github.io/blog/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="https://rangerz.github.io/blog/tags/leetcode/"/>
+    
+    <category term="array" scheme="https://rangerz.github.io/blog/tags/array/"/>
+    
+    <category term="hash table" scheme="https://rangerz.github.io/blog/tags/hash-table/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Hexo] My Hexo Setting</title>
     <link href="https://rangerz.github.io/blog/posts/30609/"/>
     <id>https://rangerz.github.io/blog/posts/30609/</id>
     <published>2021-06-15T04:19:40.000Z</published>
-    <updated>2021-06-15T06:47:13.971Z</updated>
+    <updated>2021-06-15T07:12:59.005Z</updated>
     
     
     <summary type="html">The Hexo theme and plugin settings for this Blog</summary>
