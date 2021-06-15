@@ -3,7 +3,7 @@ title: My Hexo Setting
 categories: hexo
 tags: hexo
 keywords: hexo
-description: this blog's hexo setting
+description: The Hexo theme and plugin settings for this Blog
 abbrlink: 30609
 date: 2021-06-14 23:19:40
 ---
@@ -248,9 +248,11 @@ https://search.google.com/search-console/welcome
 
 Input URL Prefix: https://rangerz.github.io/blog/
 
-HTML Tag: `<meta name="google-site-verification" content="aODVh6Swyz72uqikurLQBpNIqJO68gqxnPpEc2Pm9kI" />`
+`themes/next/layout/_partials/head/head.swig`
 
-Add to `themes/next/layout/_partials/head/head.swig`
+```html
+<meta name="google-site-verification" content="aODVh6Swyz72uqikurLQBpNIqJO68gqxnPpEc2Pm9kI" />
+```
 
 
 
