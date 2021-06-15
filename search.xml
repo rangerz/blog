@@ -80,7 +80,8 @@
 
 <h4 id="Google-Search"><a href="#Google-Search" class="headerlink" title="Google Search"></a>Google Search</h4><p><a href="https://search.google.com/search-console/welcome">https://search.google.com/search-console/welcome</a></p>
 <p>Input URL Prefix: <a href="https://rangerz.github.io/blog/">https://rangerz.github.io/blog/</a></p>
-<p>HTML Tag: <code>&lt;meta name=&quot;google-site-verification&quot; content=&quot;aODVh6Swyz72uqikurLQBpNIqJO68gqxnPpEc2Pm9kI&quot; /&gt;</code></p>
+<p>HTML Tag:</p>
+<p><code>&lt;meta name=&quot;google-site-verification&quot; content=&quot;aODVh6Swyz72uqikurLQBpNIqJO68gqxnPpEc2Pm9kI&quot; /&gt;</code></p>
 <p>Add to <code>themes/next/layout/_partials/head/head.swig</code></p>
 <h4 id="permalink"><a href="#permalink" class="headerlink" title="permalink"></a><a href="https://github.com/rozbo/hexo-abbrlink">permalink</a></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
 
