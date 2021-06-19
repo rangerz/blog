@@ -42,8 +42,10 @@ class Solution:
             head.next = ListNode(sum % 10)
             sum //= 10
             head = head.next
+
         if 1 == sum:
             head.next = ListNode(1)
+
         return dummy.next
 
 ```
