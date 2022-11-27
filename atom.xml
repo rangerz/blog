@@ -6,7 +6,7 @@
   <link href="https://rangerz.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://rangerz.github.io/blog/"/>
-  <updated>2022-11-27T05:05:01.407Z</updated>
+  <updated>2022-11-27T06:30:46.993Z</updated>
   <id>https://rangerz.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[Hexo] Upgrade Note</title>
+    <link href="https://rangerz.github.io/blog/posts/9e71c229/"/>
+    <id>https://rangerz.github.io/blog/posts/9e71c229/</id>
+    <published>2022-11-27T03:59:44.000Z</published>
+    <updated>2022-11-27T06:30:46.993Z</updated>
+    
+    
+    <summary type="html">upgrade hexo</summary>
+    
+    
+    
+    <category term="hexo" scheme="https://rangerz.github.io/blog/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://rangerz.github.io/blog/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>My MacOSX Development Environment</title>
