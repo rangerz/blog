@@ -1,5 +1,5 @@
 ---
-title: My MacOSX Development Environment
+title: 'My MacOSX Development Environment [Update 2022]'
 tags:
   - brew
   - macosx
@@ -12,18 +12,14 @@ keywords:
   - multi-screen
 description: Here are the steps I setup my macOSX development enviornment.
 abbrlink: '20270909'
-date: 2021-06-19 00:27:31
+date: 2022-11-26 00:27:31
 categories: 
 ---
-
-
 
 ### Mac App Store 
 
 - Microsoft Office 365 - Word, Excel, PowerPoint, Outlook, OneNote, OneDrive
 - Microsoft Remote Desktop
-
-
 
 ### Brew 🍺
 
@@ -33,15 +29,16 @@ categories:
 
 # Install Packages
 brew install \
-    wget \ # For Download
-    git-extras \ # Dev
-    python \ # Python 3 (latest)
-    php \ # PHP (latest)
-    colordiff \ # Replace diff
-    node \ # Dev
-    composer \ # PHP Dev
-    expect \ # For boost ssh
-    mas # App Store CLI
+  colordiff \ # Replace diff
+  composer \ # PHP Dev
+  diff-so-fancy \ # git diff
+  expect \ # For boost ssh
+  git-extras \ # Dev
+  php \ # PHP (latest)
+  mas \ # App Store CLI
+  node \ # Dev
+  python \ # Python 3 (latest)
+  wget # curl's friend
 
 # Install Apps
 brew install --cask \
@@ -50,7 +47,6 @@ brew install --cask \
     google-chrome \ # browser
     aerial \ # Beauty Screen Saver
     caffeine \ # Don't sleep
-    stretchly \ # Rest reminder
     appcleaner \ # Deeply remove App
     cheatsheet \ # long push command to show shortcut
     rectangle \ # Move and resize windows
@@ -61,28 +57,26 @@ brew install --cask \
     microsoft-teams \ # For work
     diffmerge \ # Compare code
     visual-studio-code \ # The best IDE
-    phpstorm \ # Dev for Magento
+    phpstorm \ # Dev for PHP (Magento)
     sequel-pro \ # Connect MySQL
     azure-data-studio \ # Connect MSSQL
     visual-studio-code \
-    typora \ # Markdown editor
+    mark-text \ # Markdown editor
     notion \ # The best note I think !!
     docker \ # Dev
     postman # Web API Dev
-    
+
 # FileZilla (brew is not support ...)
 open https://filezilla-project.org/download.php?type=client
 
 # Brew Update Command
 brew update &&
-	brew upgrade &&
-	brew upgrade --cask &&
-	brew autoremove &&
-	brew cleanup &&
-	brew doctor
+    brew upgrade &&
+    brew upgrade --cask &&
+    brew autoremove &&
+    brew cleanup &&
+    brew doctor
 ```
-
-
 
 ### iTerm2
 
@@ -94,6 +88,12 @@ brew install --cask iterm2
 iTerm2 > Make iTerm2 Default Term
 Preferences > Profiles > Terminal > Report Terminal Type > xterm-256color
 Preferences > Profiles > Colors > Color Presets > Dark Background
+Preferences > Profiles > Profiles > Window > Transparency: 30
+Preferences > General > Window > unselect "Native full screen windows"
+Preferences > Appearance > Dimming > Unselect all dimming
+
+# PhpStrom
+Preferences > Profiles > Profiles > Advanced > Semantic History -> Run command: 
 
 # Fonts - Monaco Nerd Font
 https://github.com/Karmenzind/monaco-nerd-fonts/raw/master/fonts/Monaco%20Nerd%20Font%20Complete.otf
@@ -107,26 +107,11 @@ https://www.iterm2.com/documentation-shell-integration.html
 iTerm2 > Install Shell Integration
 curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
 
-# iTerm2 Shortcut
+# Short Cut
 https://gist.github.com/squarism/ae3613daf5c01a98ba3a
 ```
 
-
-
-### ZSH
-
-```bash
-# macOS Catalina (10.15) use zsh by default !!
-
-# Install zsh
-brew install zsh
-
-# Switch to zsh by default
-echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells 
-chsh -s /usr/local/bin/zsh
-```
-
-#### oh-my-zsh
+### ZSH - oh-my-zsh
 
 ```bash
 # Install oh-my-zsh
@@ -157,7 +142,7 @@ brew install \
     zsh-syntax-highlighting \
     zsh-autosuggestions \
     zsh-completions
-    
+
 # Add other plugins in ~/.zshrc
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -168,9 +153,7 @@ if type brew &>/dev/null; then
 fi
 ```
 
-
-
-### [My Shell Config](https://github.com/rangerz/config)
+### [My Shell Config](https://github.com/rangerz/config) - bash alias, git, vim, and ssh setting
 
 ```bash
 cd ~
@@ -178,8 +161,6 @@ git clone https://github.com/rangerz/config.git
 ~/config/install.sh
 exec $SHELL
 ```
-
-
 
 ### Git + GPG
 
@@ -199,9 +180,15 @@ git config --global user.signingkey E68AFE14FC29E92414C2E6AF731D0E574165A8C0
 git config --global commit.gpgsign true
 ```
 
+### SSH KeyGen
 
+```bash
+# Ref: https://security.stackexchange.com/questions/143442/what-are-ssh-keygen-best-practices
+ssh-keygen -t ed25519 -a 100
+ssh-keygen -t rsa -b 4096 -o -a 100
+```
 
-### SSH with password (exssh)
+### SSH with password (exssh script)
 
 ```bash
 # Install required package
@@ -215,18 +202,7 @@ sudo mv exssh /usr/local/bin/exssh
 exssh user@localhost password
 ```
 
-
-
 ### MacOS Config
-
-#### Screenshots Folder
-
-```bash
-defaults write com.apple.screencapture location ~/Desktop/Screenshots
-killall SystemUIServer
-```
-
-
 
 #### Mouse Setting
 
@@ -248,6 +224,28 @@ killall SystemUIServer
 # Three finger drag
 - Accessibility -> Pointer Control -> Trackpad Options -> Enable dragging -> three finger drag
 - https://support.apple.com/en-us/HT204609
+```
+
+#### Screenshots Folder
+
+```bash
+defaults write com.apple.screencapture location ~/Desktop/Screenshots
+defaults write com.apple.screencapture type jpg
+killall SystemUIServer
+
+# show Library folder
+chflags nohidden ~/Library
+
+# show hidden files
+defaults write com.apple.finder AppleShowAllFiles YES
+
+# show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+killall Finder;
 ```
 
 
@@ -274,13 +272,61 @@ killall SystemUIServer
 - https://damieng.com/blog/2015/04/24/make-home-end-keys-behave-like-windows-on-mac-os-x
 ```
 
+#### Dock and Menu Bar
+
+```markdown
+- Remove most applications from Dock
+- "Show recent applications in Dock" off
+- "Show indicators for open applications" on
+```
+
+#### Finder
+
+```markdown
+- Add home folder to Favorites
+- Hide all Tags
+- Show all Filename Extensions
+- Remove Items from Bin after 30 Days
+```
+
+#### Keyboard
+
+```markdown
+# 輸入法 (Typing)
+Keyboard -> Input Source -> Select the previous input source -> Chinese, Trad. -> Zhuyin
+Use the Caps Lock key to switch to and from U.S.
+
+# Disable Sticky Key
+Accessibility -> Keyboard -> Hardware -> Options -> Press the Shift key five times to toggle Sitcky Keys
+
+# Shift + Insent => Paste
+https://superuser.com/questions/703162/shift-insert-to-paste-in-mac-os-x
+https://apple.stackexchange.com/questions/32297/how-can-i-reassign-the-copy-paste-keyboard-shortcuts
+
+# Home & End
+https://damieng.com/blog/2015/04/24/make-home-end-keys-behave-like-windows-on-mac-os-x
+mkdir ~/Library/KeyBindings
+vim ~/Library/KeyBindings/DefaultKeyBinding.dict
+
+{
+    "\UF729" = moveToBeginningOfParagraph:; // home 
+    "\UF72B" = moveToEndOfParagraph:; // end 
+    "$\UF729" = moveToBeginningOfParagraphAndModifySelection:; // shift-home 
+    "$\UF72B" = moveToEndOfParagraphAndModifySelection:; // shift-end 
+    "^\UF729" = moveToBeginningOfDocument:; // ctrl-home 
+    "^\UF72B" = moveToEndOfDocument:; // ctrl-end 
+    "^$\UF729" = moveToBeginningOfDocumentAndModifySelection:; // ctrl-shift-home 
+    "^$\UF72B" = moveToEndOfDocumentAndModifySelection:; // ctrl-shift-end
+}
+
+reboot
+```
+
 
 
 #### ulimit
 
 https://medium.com/mindful-technology/too-many-open-files-limit-ulimit-on-mac-os-x-add0f1bfddde
-
-
 
 #### Double Screens
 
@@ -294,11 +340,8 @@ brew install --cask karabiner-elements
 
 
 
+### Resources
 
-
-
-
-
-
+- [Mac Setup for Web Development [2022] - Robin Wieruch](https://www.robinwieruch.de/mac-setup-web-development/)
 
 
