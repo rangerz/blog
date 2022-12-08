@@ -13,7 +13,7 @@ keywords:
 description: Here are the steps I setup my macOSX development enviornment.
 abbrlink: '20270909'
 date: 2022-11-26 00:27:31
-categories: 
+categories: mac
 ---
 
 ### Mac App Store 
@@ -93,7 +93,7 @@ Preferences > General > Window > unselect "Native full screen windows"
 Preferences > Appearance > Dimming > Unselect all dimming
 
 # PhpStrom
-Preferences > Profiles > Profiles > Advanced > Semantic History -> Run command: 
+Preferences > Profiles > Profiles > Advanced > Semantic History -> Run command:
 
 # Fonts - Monaco Nerd Font
 https://github.com/Karmenzind/monaco-nerd-fonts/raw/master/fonts/Monaco%20Nerd%20Font%20Complete.otf
@@ -309,13 +309,13 @@ mkdir ~/Library/KeyBindings
 vim ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 {
-    "\UF729" = moveToBeginningOfParagraph:; // home 
-    "\UF72B" = moveToEndOfParagraph:; // end 
-    "$\UF729" = moveToBeginningOfParagraphAndModifySelection:; // shift-home 
-    "$\UF72B" = moveToEndOfParagraphAndModifySelection:; // shift-end 
-    "^\UF729" = moveToBeginningOfDocument:; // ctrl-home 
-    "^\UF72B" = moveToEndOfDocument:; // ctrl-end 
-    "^$\UF729" = moveToBeginningOfDocumentAndModifySelection:; // ctrl-shift-home 
+    "\UF729" = moveToBeginningOfParagraph:; // home
+    "\UF72B" = moveToEndOfParagraph:; // end
+    "$\UF729" = moveToBeginningOfParagraphAndModifySelection:; // shift-home
+    "$\UF72B" = moveToEndOfParagraphAndModifySelection:; // shift-end
+    "^\UF729" = moveToBeginningOfDocument:; // ctrl-home
+    "^\UF72B" = moveToEndOfDocument:; // ctrl-end
+    "^$\UF729" = moveToBeginningOfDocumentAndModifySelection:; // ctrl-shift-home
     "^$\UF72B" = moveToEndOfDocumentAndModifySelection:; // ctrl-shift-end
 }
 
