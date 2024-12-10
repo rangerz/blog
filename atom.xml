@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Ranger Chan&#39;s Blog</title>
+  <icon>https://rangerz.github.io/blog/icon.png</icon>
+  <subtitle>Time passes, but code remains</subtitle>
+  <link href="https://rangerz.github.io/blog/atom.xml" rel="self"/>
+  
+  <link href="https://rangerz.github.io/blog/"/>
+  <updated>2024-12-10T05:45:05.899Z</updated>
+  <id>https://rangerz.github.io/blog/</id>
+  
+  <author>
+    <name>Ranger Chan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[Hexo] Upgrade Note</title>
+    <link href="https://rangerz.github.io/blog/posts/9e71c229/"/>
+    <id>https://rangerz.github.io/blog/posts/9e71c229/</id>
+    <published>2022-11-27T03:59:44.000Z</published>
+    <updated>2024-12-10T05:45:05.899Z</updated>
+    
+    
+    <summary type="html">note for commands to upgrade hexo</summary>
+    
+    
+    
+    <category term="hexo" scheme="https://rangerz.github.io/blog/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://rangerz.github.io/blog/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My MacOSX Development Environment [Update 2022]</title>
+    <link href="https://rangerz.github.io/blog/posts/20270909/"/>
+    <id>https://rangerz.github.io/blog/posts/20270909/</id>
+    <published>2022-11-26T06:27:31.000Z</published>
+    <updated>2024-12-10T05:45:05.899Z</updated>
+    
+    
+    <summary type="html">Here are the steps I setup my macOSX development enviornment.</summary>
+    
+    
+    
+    <category term="mac" scheme="https://rangerz.github.io/blog/categories/mac/"/>
+    
+    
+    <category term="brew" scheme="https://rangerz.github.io/blog/tags/brew/"/>
+    
+    <category term="macosx" scheme="https://rangerz.github.io/blog/tags/macosx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[LeetCode] 0002. Add Two Numbers [Medium]</title>
+    <link href="https://rangerz.github.io/blog/posts/1c0002/"/>
+    <id>https://rangerz.github.io/blog/posts/1c0002/</id>
+    <published>2021-06-15T07:24:55.000Z</published>
+    <updated>2024-12-10T05:45:05.898Z</updated>
+    
+    
+    <summary type="html">[LeetCode] 0002. Add Two Numbers [Medium]</summary>
+    
+    
+    
+    <category term="leetcode" scheme="https://rangerz.github.io/blog/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="https://rangerz.github.io/blog/tags/leetcode/"/>
+    
+    <category term="linked-list" scheme="https://rangerz.github.io/blog/tags/linked-list/"/>
+    
+    <category term="math" scheme="https://rangerz.github.io/blog/tags/math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[LeetCode] 0001. Two Sum [Easy]</title>
+    <link href="https://rangerz.github.io/blog/posts/1c0001/"/>
+    <id>https://rangerz.github.io/blog/posts/1c0001/</id>
+    <published>2021-06-15T06:51:55.000Z</published>
+    <updated>2024-12-10T05:45:05.898Z</updated>
+    
+    
+    <summary type="html">[LeetCode] 0001. Two Sum [Easy]</summary>
+    
+    
+    
+    <category term="leetcode" scheme="https://rangerz.github.io/blog/categories/leetcode/"/>
+    
+    
+    <category term="leetcode" scheme="https://rangerz.github.io/blog/tags/leetcode/"/>
+    
+    <category term="array" scheme="https://rangerz.github.io/blog/tags/array/"/>
+    
+    <category term="hash table" scheme="https://rangerz.github.io/blog/tags/hash-table/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Hexo] My Hexo Setting</title>
+    <link href="https://rangerz.github.io/blog/posts/30609/"/>
+    <id>https://rangerz.github.io/blog/posts/30609/</id>
+    <published>2021-06-15T04:19:40.000Z</published>
+    <updated>2024-12-10T05:45:05.898Z</updated>
+    
+    
+    <summary type="html">The Hexo theme and plugin settings for this Blog</summary>
+    
+    
+    
+    <category term="hexo" scheme="https://rangerz.github.io/blog/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://rangerz.github.io/blog/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
